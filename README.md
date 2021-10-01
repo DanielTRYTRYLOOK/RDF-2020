@@ -128,7 +128,7 @@ The OpenROAD tool included in DATC RDF can support both MBFF clustering algorith
 
 
 
-Adding Your Pont Tool Binaries into RDF Flow
+Adding Your Point Tool Binaries into RDF Flow
 ---
 
 You can add your own point tool in the RDF configurable flow.
