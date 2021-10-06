@@ -9,6 +9,23 @@ RDF-2020 also opens [a new "Calibrations" direction](https://github.com/ieee-ced
 DATC RDF: Getting Started
 ---
 
+### Pre-requisite (Ubuntu 20.04)
+
+You need to install the basic development packages (PyYAML, Matplotlib), `libtcl8.5`, `libgomp1`, and fix some bugs in OpenROAD installation.
+
+```
+# Set up the OpenROAD tools
+cd bin/openroad
+./install.sh
+cd ../../run
+# Setup the workspace; you need Python 3
+python ../src/rdf.py --config test.yml --test
+# If you set the `--test` flag, the workspace is named `rdf.yymmdd.HHMMSS`
+# Go to the workspace and run it
+cd rdf.yymmdd.HHMMSS
+./run.sh
+```
+
 ### Configuring the Flow
 
 #### Design Configuration
